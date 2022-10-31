@@ -7,7 +7,7 @@
 
 
 // Event handling, user interaction is what starts the code execution.
-
+let formAdd = document.querySelector(".form__add-todo");
 var taskInput=document.querySelector(".new-task");//Add a new task.
 var addButton=document.querySelector(".querySelector");//first button
 var incompleteTaskHolder=document.getElementById("incompleteTasks");//ul of #incompleteTasks
@@ -56,7 +56,6 @@ var createNewTaskElement=function(taskString){
     listItem.appendChild(deleteButton);
     return listItem;
 }
-
 
 
 var addTask=function(){
@@ -147,9 +146,11 @@ var ajaxRequest=function(){
 
 
 //Set the click handler to the addTask function.
-addButton.onclick=addTask;
-addButton.addEventListener("click",addTask);
-addButton.addEventListener("click",ajaxRequest);
+formAdd.addEventListener('submit', (event) => {
+    event.preventDefault();
+    addTask();
+    ajaxRequest();
+});
 
 
 var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
