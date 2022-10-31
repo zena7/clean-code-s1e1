@@ -34,7 +34,7 @@ body {
   flex-grow: 1;
 }
 
-.main__section-todo_task{
+.section-todo__task{
   font-size: 30px
 }
 
@@ -87,7 +87,7 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-.main__section-add_header {
+.section-add__todo_header {
   display: block;
   margin: 0 0 20px;
 }

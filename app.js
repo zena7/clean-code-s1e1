@@ -10,7 +10,7 @@
 let formAdd = document.querySelector(".form__add-todo");
 var taskInput=document.querySelector(".form__add-todo_create");//Add a new task.
 var addButton=document.querySelector(".querySelector");//first button
-var incompleteTaskHolder=document.querySelector(".main__section-todo_tasks-list");//ul of #incompleteTasks
+var incompleteTaskHolder=document.querySelector(".section-todo__tasks-list");//ul of #incompleteTasks
 var completedTasksHolder=document.querySelector(".section-complited__completed-tasks-list");//completed-tasks
 
 
