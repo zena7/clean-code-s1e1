@@ -8,10 +8,10 @@
 
 // Event handling, user interaction is what starts the code execution.
 let formAdd = document.querySelector(".form__add-todo");
-var taskInput=document.querySelector(".new-task");//Add a new task.
+var taskInput=document.querySelector(".form__add-todo_create");//Add a new task.
 var addButton=document.querySelector(".querySelector");//first button
-var incompleteTaskHolder=document.getElementById("incompleteTasks");//ul of #incompleteTasks
-var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
+var incompleteTaskHolder=document.querySelector(".main__section-todo_tasks-list");//ul of #incompleteTasks
+var completedTasksHolder=document.querySelector(".section-complited__completed-tasks-list");//completed-tasks
 
 
 //New task list item
